@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/todoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="Work on The Return of Nexus"
+        android:layout_toStartOf="@+id/tododuedate"
+        android:layout_toLeftOf="@+id/tododuedate"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/todoDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:paddingLeft="5dp"
+        android:text="9/20/2017"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/constantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toLeftOf="@+id/tododuedate"
+        android:layout_toStartOf="@+id/tododuedate"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Work on The Return of Nexus"
+        android:textAllCaps="true"
+        android:textColor="#2d3037"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:paddingBottom="0dp"
+    android:paddingEnd="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingStart="0dp"
+    android:paddingTop="0dp">
+
+    <AdapterViewFlipper
+        android:id="@+id/simpleAdapterViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></AdapterViewFlipper>
+
+    <ScrollView
+        android:id="@+id/todoListHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/simpleAdapterViewFlipper"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/todoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </ScrollView>
+
+
+    <!--
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/eventlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/eventname"
+                    android:layout_alignStart="@+id/eventname"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:text="Klaus Room 3023"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/eventname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/eventimage"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toEndOf="@+id/eventimage"
+                    android:layout_toRightOf="@+id/eventimage"
+                    android:layout_weight="1"
+                    android:text="CS 3600 Group Meeting"
+                    android:textColor="@android:color/background_light" />
+
+                <TextView
+                    android:id="@+id/eventtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/eventimage"
+                    android:layout_alignLeft="@+id/eventlocation"
+                    android:layout_alignStart="@+id/eventlocation"
+                    android:layout_marginBottom="11dp"
+                    android:text="3:00 PM - 6:00 PM"
+                    android:textColor="@android:color/background_light" />
+
+                <ImageView
+                    android:id="@+id/eventimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginStart="33dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/calendar_lite" />
+
+            </RelativeLayout>
+        </ViewFlipper>
+    -->
+
+</RelativeLayout>
